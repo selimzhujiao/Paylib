@@ -8,52 +8,621 @@
 package com.liumengfan.paylib;
 
 public final class R {
+    public static final class anim {
+        public static int basedialog_anim=0x7f040000;
+        public static int reverse_anim=0x7f040001;
+        public static int rotating=0x7f040002;
+        public static int scale_alpha=0x7f040003;
+    }
     public static final class attr {
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static int backBtnBackground=0x7f01000c;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int backBtnVisibility=0x7f010007;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static int leftiiiBtnBackground=0x7f01000d;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int leftiiiBtnVisibility=0x7f010008;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int leftredVisibility=0x7f01000b;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int rTextColor=0x7f010011;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int rTextSize=0x7f010012;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int rTitleText=0x7f010006;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static int rightBtnBackground=0x7f01000e;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int rightBtnVisibility=0x7f010009;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int rightTvVisibility=0x7f01000a;
+        /**  菜单所在位置 
+         <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>left_top</code></td><td>1</td><td></td></tr>
+<tr><td><code>right_top</code></td><td>2</td><td></td></tr>
+<tr><td><code>left_bottom</code></td><td>4</td><td></td></tr>
+<tr><td><code>right_bottom</code></td><td>8</td><td></td></tr>
+</table>
+         */
+        public static int satelitemenuposition=0x7f010000;
+        /**  半径 
+ 距离底部gaodu 
+         <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int satelitemenuradius=0x7f010001;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int satelitemenuradmar=0x7f010002;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static int stuckShadowDrawable=0x7f010004;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int stuckShadowHeight=0x7f010003;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int textColor=0x7f01000f;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int textSize=0x7f010010;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int titleText=0x7f010005;
+    }
+    public static final class color {
+        public static int black=0x7f050001;
+        public static int gray=0x7f050002;
+        public static int light_blue=0x7f050003;
+        public static int white=0x7f050000;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
+
+         Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively).
+    
+ Default screen margins, per the Android Design guidelines. 
          */
-        public static int activity_horizontal_margin=0x7f040000;
-        public static int activity_vertical_margin=0x7f040001;
+        public static int activity_horizontal_margin=0x7f060000;
+        public static int activity_vertical_margin=0x7f060001;
     }
     public static final class drawable {
-        public static int ic_launcher=0x7f020000;
+        public static int basedialog=0x7f020000;
+        public static int ic_launcher=0x7f020001;
+        public static int sticky_shadow_default=0x7f020002;
     }
     public static final class id {
-        public static int button1=0x7f060004;
-        public static int button2=0x7f060005;
-        public static int h5pay=0x7f060003;
-        public static int pay=0x7f060002;
-        public static int product_price=0x7f060001;
-        public static int product_subject=0x7f060000;
+        public static int bottom_line=0x7f070013;
+        public static int button1=0x7f070014;
+        public static int button2=0x7f070015;
+        public static int dialog_line_layout=0x7f070006;
+        public static int h5pay=0x7f07000b;
+        public static int leftBtn_iii=0x7f07000c;
+        public static int leftBtn_linear=0x7f07000d;
+        public static int left_bottom=0x7f070002;
+        public static int left_red=0x7f07000e;
+        public static int left_top=0x7f070003;
+        public static int pay=0x7f07000a;
+        public static int product_price=0x7f070009;
+        public static int product_subject=0x7f070008;
+        public static int progressBar1=0x7f070007;
+        /**  pulltorefreshview  所有集成baseList a/f ids  引用@id/xxx  ||  R.id.xxxx 
+         */
+        public static int pulltorefreshview=0x7f070000;
+        public static int pulltorefreshview_listview=0x7f070001;
+        public static int right_bottom=0x7f070004;
+        public static int right_titlebar=0x7f070011;
+        public static int right_top=0x7f070005;
+        public static int rightbtn_layout=0x7f070010;
+        public static int rightbtn_linear=0x7f070012;
+        public static int titlebar=0x7f07000f;
     }
     public static final class layout {
         public static int activity_main=0x7f030000;
-        public static int pay_for_money_layout=0x7f030001;
-        public static int wei_xin_pay_layout=0x7f030002;
+        public static int basedialog=0x7f030001;
+        public static int pay_for_money_layout=0x7f030002;
+        public static int title_bar=0x7f030003;
+        public static int wei_xin_pay_layout=0x7f030004;
+    }
+    public static final class menu {
+        public static int main=0x7f0a0000;
     }
     public static final class string {
-        public static int action_settings=0x7f050002;
-        public static int app_name=0x7f050000;
-        public static int check_pay=0x7f050005;
-        public static int get_access_token_fail=0x7f05000b;
-        public static int get_access_token_succ=0x7f05000a;
-        public static int get_prepayid_fail=0x7f05000f;
-        public static int get_prepayid_succ=0x7f05000e;
-        public static int getting_access_token=0x7f050009;
-        public static int getting_prepayid=0x7f05000c;
-        public static int hello_world=0x7f050001;
-        public static int input_package_value=0x7f050007;
-        public static int input_reqkey=0x7f050006;
-        public static int input_sign=0x7f050008;
+        public static int action_settings=0x7f080002;
+        public static int app_name=0x7f080000;
+        public static int check_pay=0x7f080018;
+        public static int get_access_token_fail=0x7f08001e;
+        public static int get_access_token_succ=0x7f08001d;
+        public static int get_prepayid_fail=0x7f080022;
+        public static int get_prepayid_succ=0x7f080021;
+        public static int getting_access_token=0x7f08001c;
+        public static int getting_prepayid=0x7f08001f;
+        /**   pull and sticky
+         */
+        public static int head=0x7f08000b;
+        public static int hello_world=0x7f080001;
+        public static int input_package_value=0x7f08001a;
+        public static int input_reqkey=0x7f080019;
+        public static int input_sign=0x7f08001b;
+        public static int key_tracking_mode=0x7f08000a;
+        public static int load_fail=0x7f080015;
+        public static int load_succeed=0x7f080014;
+        public static int loading=0x7f080013;
         /**  PayActivity 
          */
-        public static int pay_by_wx=0x7f050003;
-        public static int pay_by_wxap=0x7f050004;
-        public static int pay_result_callback_msg=0x7f050011;
+        public static int pay_by_wx=0x7f080016;
+        public static int pay_by_wxap=0x7f080017;
+        public static int pay_result_callback_msg=0x7f080024;
         /**  WXPayEntryActivity 
          */
-        public static int pay_result_tip=0x7f050010;
-        public static int paying=0x7f05000d;
+        public static int pay_result_tip=0x7f080023;
+        public static int paying=0x7f080020;
+        public static int pull_to_refresh=0x7f08000c;
+        public static int pull_to_refresh_refreshing_label=0x7f080009;
+        public static int pullup_to_load=0x7f080011;
+        public static int refresh_fail=0x7f080010;
+        public static int refresh_succeed=0x7f08000f;
+        public static int refreshing=0x7f08000e;
+        public static int release_to_load=0x7f080012;
+        public static int release_to_refresh=0x7f08000d;
+        public static int xlistview_footer_hint_normal=0x7f080007;
+        public static int xlistview_footer_hint_ready=0x7f080008;
+        public static int xlistview_header_hint_loading=0x7f080005;
+        public static int xlistview_header_hint_normal=0x7f080003;
+        public static int xlistview_header_hint_ready=0x7f080004;
+        public static int xlistview_header_last_time=0x7f080006;
     }
+    public static final class style {
+        /** 
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    
+         */
+        public static int dialog=0x7f090000;
+    }
+    public static final class styleable {
+        /** Attributes that can be used with a MyTitleBar.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #MyTitleBar_backBtnBackground com.liumengfan.paylib:backBtnBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #MyTitleBar_backBtnVisibility com.liumengfan.paylib:backBtnVisibility}</code></td><td></td></tr>
+           <tr><td><code>{@link #MyTitleBar_leftiiiBtnBackground com.liumengfan.paylib:leftiiiBtnBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #MyTitleBar_leftiiiBtnVisibility com.liumengfan.paylib:leftiiiBtnVisibility}</code></td><td></td></tr>
+           <tr><td><code>{@link #MyTitleBar_leftredVisibility com.liumengfan.paylib:leftredVisibility}</code></td><td></td></tr>
+           <tr><td><code>{@link #MyTitleBar_rTextColor com.liumengfan.paylib:rTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #MyTitleBar_rTextSize com.liumengfan.paylib:rTextSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #MyTitleBar_rTitleText com.liumengfan.paylib:rTitleText}</code></td><td></td></tr>
+           <tr><td><code>{@link #MyTitleBar_rightBtnBackground com.liumengfan.paylib:rightBtnBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #MyTitleBar_rightBtnVisibility com.liumengfan.paylib:rightBtnVisibility}</code></td><td></td></tr>
+           <tr><td><code>{@link #MyTitleBar_rightTvVisibility com.liumengfan.paylib:rightTvVisibility}</code></td><td></td></tr>
+           <tr><td><code>{@link #MyTitleBar_textColor com.liumengfan.paylib:textColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #MyTitleBar_textSize com.liumengfan.paylib:textSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #MyTitleBar_titleText com.liumengfan.paylib:titleText}</code></td><td></td></tr>
+           </table>
+           @see #MyTitleBar_backBtnBackground
+           @see #MyTitleBar_backBtnVisibility
+           @see #MyTitleBar_leftiiiBtnBackground
+           @see #MyTitleBar_leftiiiBtnVisibility
+           @see #MyTitleBar_leftredVisibility
+           @see #MyTitleBar_rTextColor
+           @see #MyTitleBar_rTextSize
+           @see #MyTitleBar_rTitleText
+           @see #MyTitleBar_rightBtnBackground
+           @see #MyTitleBar_rightBtnVisibility
+           @see #MyTitleBar_rightTvVisibility
+           @see #MyTitleBar_textColor
+           @see #MyTitleBar_textSize
+           @see #MyTitleBar_titleText
+         */
+        public static final int[] MyTitleBar = {
+            0x7f010005, 0x7f010006, 0x7f010007, 0x7f010008,
+            0x7f010009, 0x7f01000a, 0x7f01000b, 0x7f01000c,
+            0x7f01000d, 0x7f01000e, 0x7f01000f, 0x7f010010,
+            0x7f010011, 0x7f010012
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.liumengfan.paylib.R.attr#backBtnBackground}
+          attribute's value can be found in the {@link #MyTitleBar} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.liumengfan.paylib:backBtnBackground
+        */
+        public static int MyTitleBar_backBtnBackground = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.liumengfan.paylib.R.attr#backBtnVisibility}
+          attribute's value can be found in the {@link #MyTitleBar} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.liumengfan.paylib:backBtnVisibility
+        */
+        public static int MyTitleBar_backBtnVisibility = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.liumengfan.paylib.R.attr#leftiiiBtnBackground}
+          attribute's value can be found in the {@link #MyTitleBar} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.liumengfan.paylib:leftiiiBtnBackground
+        */
+        public static int MyTitleBar_leftiiiBtnBackground = 8;
+        /**
+          <p>This symbol is the offset where the {@link com.liumengfan.paylib.R.attr#leftiiiBtnVisibility}
+          attribute's value can be found in the {@link #MyTitleBar} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.liumengfan.paylib:leftiiiBtnVisibility
+        */
+        public static int MyTitleBar_leftiiiBtnVisibility = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.liumengfan.paylib.R.attr#leftredVisibility}
+          attribute's value can be found in the {@link #MyTitleBar} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.liumengfan.paylib:leftredVisibility
+        */
+        public static int MyTitleBar_leftredVisibility = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.liumengfan.paylib.R.attr#rTextColor}
+          attribute's value can be found in the {@link #MyTitleBar} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.liumengfan.paylib:rTextColor
+        */
+        public static int MyTitleBar_rTextColor = 12;
+        /**
+          <p>This symbol is the offset where the {@link com.liumengfan.paylib.R.attr#rTextSize}
+          attribute's value can be found in the {@link #MyTitleBar} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.liumengfan.paylib:rTextSize
+        */
+        public static int MyTitleBar_rTextSize = 13;
+        /**
+          <p>This symbol is the offset where the {@link com.liumengfan.paylib.R.attr#rTitleText}
+          attribute's value can be found in the {@link #MyTitleBar} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.liumengfan.paylib:rTitleText
+        */
+        public static int MyTitleBar_rTitleText = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.liumengfan.paylib.R.attr#rightBtnBackground}
+          attribute's value can be found in the {@link #MyTitleBar} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.liumengfan.paylib:rightBtnBackground
+        */
+        public static int MyTitleBar_rightBtnBackground = 9;
+        /**
+          <p>This symbol is the offset where the {@link com.liumengfan.paylib.R.attr#rightBtnVisibility}
+          attribute's value can be found in the {@link #MyTitleBar} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.liumengfan.paylib:rightBtnVisibility
+        */
+        public static int MyTitleBar_rightBtnVisibility = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.liumengfan.paylib.R.attr#rightTvVisibility}
+          attribute's value can be found in the {@link #MyTitleBar} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.liumengfan.paylib:rightTvVisibility
+        */
+        public static int MyTitleBar_rightTvVisibility = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.liumengfan.paylib.R.attr#textColor}
+          attribute's value can be found in the {@link #MyTitleBar} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.liumengfan.paylib:textColor
+        */
+        public static int MyTitleBar_textColor = 10;
+        /**
+          <p>This symbol is the offset where the {@link com.liumengfan.paylib.R.attr#textSize}
+          attribute's value can be found in the {@link #MyTitleBar} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.liumengfan.paylib:textSize
+        */
+        public static int MyTitleBar_textSize = 11;
+        /**
+          <p>This symbol is the offset where the {@link com.liumengfan.paylib.R.attr#titleText}
+          attribute's value can be found in the {@link #MyTitleBar} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.liumengfan.paylib:titleText
+        */
+        public static int MyTitleBar_titleText = 0;
+        /** Attributes that can be used with a SateliteMenu.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #SateliteMenu_satelitemenuposition com.liumengfan.paylib:satelitemenuposition}</code></td><td> 菜单所在位置 </td></tr>
+           <tr><td><code>{@link #SateliteMenu_satelitemenuradius com.liumengfan.paylib:satelitemenuradius}</code></td><td> 半径 
+ 距离底部gaodu </td></tr>
+           <tr><td><code>{@link #SateliteMenu_satelitemenuradmar com.liumengfan.paylib:satelitemenuradmar}</code></td><td></td></tr>
+           </table>
+           @see #SateliteMenu_satelitemenuposition
+           @see #SateliteMenu_satelitemenuradius
+           @see #SateliteMenu_satelitemenuradmar
+         */
+        public static final int[] SateliteMenu = {
+            0x7f010000, 0x7f010001, 0x7f010002
+        };
+        /**
+          <p>
+          @attr description
+           菜单所在位置 
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>left_top</code></td><td>1</td><td></td></tr>
+<tr><td><code>right_top</code></td><td>2</td><td></td></tr>
+<tr><td><code>left_bottom</code></td><td>4</td><td></td></tr>
+<tr><td><code>right_bottom</code></td><td>8</td><td></td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name com.liumengfan.paylib:satelitemenuposition
+        */
+        public static int SateliteMenu_satelitemenuposition = 0;
+        /**
+          <p>
+          @attr description
+           半径 
+ 距离底部gaodu 
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name com.liumengfan.paylib:satelitemenuradius
+        */
+        public static int SateliteMenu_satelitemenuradius = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.liumengfan.paylib.R.attr#satelitemenuradmar}
+          attribute's value can be found in the {@link #SateliteMenu} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.liumengfan.paylib:satelitemenuradmar
+        */
+        public static int SateliteMenu_satelitemenuradmar = 2;
+        /** Attributes that can be used with a StickyScrollView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #StickyScrollView_stuckShadowDrawable com.liumengfan.paylib:stuckShadowDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #StickyScrollView_stuckShadowHeight com.liumengfan.paylib:stuckShadowHeight}</code></td><td></td></tr>
+           </table>
+           @see #StickyScrollView_stuckShadowDrawable
+           @see #StickyScrollView_stuckShadowHeight
+         */
+        public static final int[] StickyScrollView = {
+            0x7f010003, 0x7f010004
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.liumengfan.paylib.R.attr#stuckShadowDrawable}
+          attribute's value can be found in the {@link #StickyScrollView} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name com.liumengfan.paylib:stuckShadowDrawable
+        */
+        public static int StickyScrollView_stuckShadowDrawable = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.liumengfan.paylib.R.attr#stuckShadowHeight}
+          attribute's value can be found in the {@link #StickyScrollView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.liumengfan.paylib:stuckShadowHeight
+        */
+        public static int StickyScrollView_stuckShadowHeight = 0;
+    };
 }
