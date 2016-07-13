@@ -176,11 +176,6 @@ containing a value of this type.
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
-
-         Example customization of dimensions originally defined in res/values/dimens.xml
-         (such as screen margins) for screens with more than 820dp of available width. This
-         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively).
-    
  Default screen margins, per the Android Design guidelines. 
          */
         public static int activity_horizontal_margin=0x7f060000;
@@ -230,33 +225,33 @@ containing a value of this type.
     public static final class string {
         public static int action_settings=0x7f080002;
         public static int app_name=0x7f080000;
-        public static int check_pay=0x7f080018;
-        public static int get_access_token_fail=0x7f08001e;
-        public static int get_access_token_succ=0x7f08001d;
-        public static int get_prepayid_fail=0x7f080022;
-        public static int get_prepayid_succ=0x7f080021;
-        public static int getting_access_token=0x7f08001c;
-        public static int getting_prepayid=0x7f08001f;
+        public static int check_pay=0x7f080019;
+        public static int get_access_token_fail=0x7f08001f;
+        public static int get_access_token_succ=0x7f08001e;
+        public static int get_prepayid_fail=0x7f080023;
+        public static int get_prepayid_succ=0x7f080022;
+        public static int getting_access_token=0x7f08001d;
+        public static int getting_prepayid=0x7f080020;
         /**   pull and sticky
          */
         public static int head=0x7f08000b;
         public static int hello_world=0x7f080001;
-        public static int input_package_value=0x7f08001a;
-        public static int input_reqkey=0x7f080019;
-        public static int input_sign=0x7f08001b;
+        public static int input_package_value=0x7f08001b;
+        public static int input_reqkey=0x7f08001a;
+        public static int input_sign=0x7f08001c;
         public static int key_tracking_mode=0x7f08000a;
         public static int load_fail=0x7f080015;
         public static int load_succeed=0x7f080014;
         public static int loading=0x7f080013;
         /**  PayActivity 
          */
-        public static int pay_by_wx=0x7f080016;
-        public static int pay_by_wxap=0x7f080017;
-        public static int pay_result_callback_msg=0x7f080024;
+        public static int pay_by_wx=0x7f080017;
+        public static int pay_by_wxap=0x7f080018;
+        public static int pay_result_callback_msg=0x7f080025;
         /**  WXPayEntryActivity 
          */
-        public static int pay_result_tip=0x7f080023;
-        public static int paying=0x7f080020;
+        public static int pay_result_tip=0x7f080024;
+        public static int paying=0x7f080021;
         public static int pull_to_refresh=0x7f08000c;
         public static int pull_to_refresh_refreshing_label=0x7f080009;
         public static int pullup_to_load=0x7f080011;
@@ -265,6 +260,7 @@ containing a value of this type.
         public static int refreshing=0x7f08000e;
         public static int release_to_load=0x7f080012;
         public static int release_to_refresh=0x7f08000d;
+        public static int webtype=0x7f080016;
         public static int xlistview_footer_hint_normal=0x7f080007;
         public static int xlistview_footer_hint_ready=0x7f080008;
         public static int xlistview_header_hint_loading=0x7f080005;

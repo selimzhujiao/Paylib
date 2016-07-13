@@ -13,6 +13,8 @@ import javax.net.ssl.SSLContext;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
 
+
+
 import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;
 import org.apache.http.HttpVersion;
@@ -36,6 +38,7 @@ import android.app.Activity;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Looper;
+import android.provider.SyncStateContract.Constants;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -54,13 +57,15 @@ public class WeiXinPayActivity extends Activity {
 	private IWXAPI api;
 	private  String url = "http://wxpay.weixin.qq.com/pub_v2/app/app_pay.php?plat=android";
 
+	//AppID：wx5e71abd366954a75
+	//AppSecret：46c8a1e639b544f04fdc4195e0f64c2b
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		setContentView(R.layout.wei_xin_pay_layout);
 		button1 = (Button) findViewById(R.id.button1);
 		button2 = (Button) findViewById(R.id.button2);
-		api = WXAPIFactory.createWXAPI(this, "wx6601ce8ae4bc2d4e");
+		api = WXAPIFactory.createWXAPI(this, "wx5e71abd366954a75");
 		button1.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -70,8 +75,24 @@ public class WeiXinPayActivity extends Activity {
 
 				Toast.makeText(WeiXinPayActivity.this, "获取订单中...",
 						Toast.LENGTH_SHORT).show();
-				ASTY asy = new ASTY();
-				asy.execute(url);
+				
+//				ASTY asy = new ASTY();
+//				asy.execute(url);
+				PayReq req = new PayReq();
+				req.appId = "wx5e71abd366954a75";
+				req.partnerId = "1341184101";
+				req.prepayId = "wx201606021450120727d9e5e00289768184";
+				req.nonceStr = "5ex5z8S9kXkAxBDo";
+				req.timeStamp = "1464853136";
+				req.packageValue = "Sign=WXPay";
+				req.sign = "5588024A06F7B3FE1FA8C8408377DD98";
+				req.extData = "app data"; // optional
+				
+				Toast.makeText(WeiXinPayActivity.this,
+						"正常调起支付", Toast.LENGTH_SHORT)
+						.show();
+				// 在支付之前，如果应用没有注册到微信，应该先调用IWXMsg.registerApp将应用注册到微信
+				api.sendReq(req);
 			}
 		});
 		button2.setOnClickListener(new OnClickListener() {
@@ -115,15 +136,26 @@ public class WeiXinPayActivity extends Activity {
 					PayReq req = new PayReq();
 					// req.appId = "wxf8b4f85f3a794e77"; //
 					// 测试用appId
+					
 					req.appId = json.getString("appid");
-					req.partnerId = json.getString("partnerid");
-					req.prepayId = json.getString("prepayid");
-					req.nonceStr = json.getString("noncestr");
-					req.timeStamp = json.getString("timestamp");
+					req.partnerId = json.getString("partnerid");//商户号
+					req.prepayId = json.getString("prepayid");//预支付ID
+					req.nonceStr = json.getString("noncestr");//随机窜
+					req.timeStamp = json.getString("timestamp");//45464656
 					req.packageValue = json
 							.getString("package");
 					req.sign = json.getString("sign");
 					req.extData = "app data"; // optional
+					
+//					req.appId = "wx5e71abd366954a75";
+//					req.partnerId = "1341184101";
+//					req.prepayId = "wx201605301322385be69819cc0801961900";
+//					req.nonceStr = "574bce252cc4d";
+//					req.timeStamp = "1464585766";
+//					req.packageValue = "Sign=WXPay";
+//					req.sign = "D077180299B4E25332CCB9CD529FA932";
+//					req.extData = "app data"; // optional
+					
 					Toast.makeText(WeiXinPayActivity.this,
 							"正常调起支付", Toast.LENGTH_SHORT)
 							.show();
